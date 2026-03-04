@@ -1,0 +1,306 @@
+configuration-as-code: {
+  }
+credentials:
+  folder: {
+    }
+  operationsCenter: {
+    }
+  providerImpl: {
+    }
+  system:
+    domainCredentials:
+    - domain: {
+        }
+  user: {
+    }
+jenkins:
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  log: {
+    }
+  markupFormatter: "plainText"
+  mode: NORMAL
+  noUsageStatistics: true
+  nodeMonitors:
+  - "architecture"
+  - "clock"
+  - diskSpace:
+      freeSpaceThreshold: "1GiB"
+      freeSpaceWarningThreshold: "2GiB"
+  - "swapSpace"
+  - tmpSpace:
+      freeSpaceThreshold: "1GiB"
+      freeSpaceWarningThreshold: "2GiB"
+  - "responseTime"
+  numExecutors: 1
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm: "operationsCenter"
+  slaveAgentPort: 50000
+  systemMessage: "This is my shared_config system message"
+  views:
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+cloudbees-monitoring: {
+  }
+advisor: {
+  }
+beekeeper:
+  enabled: true
+  securityWarnings:
+    enabledForCore: true
+    enabledForPlugins: true
+  upgrades:
+    autoDowngradePlugins: false
+    autoUpgradePlugins: true
+globalCloudBeesPipelineTemplateCatalog: {
+  }
+kube:
+  podTemplatesConfiguration: {
+    }
+support:
+  automatedBundleConfiguration:
+    componentIds:
+    - "SegmentClientEventsComponent"
+    - "CloudBeesAssuranceSupport"
+    - "CascScmRetrieverSupport"
+    - "CloudBeesCasCUpdateLogBundlesSupport"
+    - "AgentsConfigFile"
+    - "ConfigFileComponent"
+    - "OtherConfigFilesComponent"
+    - "AboutBrowser"
+    - "AboutJenkins"
+    - "AboutUser"
+    - "AdministrativeMonitors"
+    - "BuildQueue"
+    - "CustomLogs"
+    - "DumpExportTable"
+    - "EnvironmentVariables"
+    - "FileDescriptorLimit"
+    - "GCLogs"
+    - "HeapUsageHistogram"
+    - "ItemsContent"
+    - "AgentsJVMProcessSystemMetricsContents"
+    - "MasterJVMProcessSystemMetricsContents"
+    - "JenkinsLogs"
+    - "LoadStats"
+    - "LoggerManager"
+    - "Metrics"
+    - "NetworkInterfaces"
+    - "NodeExecutors"
+    - "NodeMonitors"
+    - "OtherLogs"
+    - "ProxyConfiguration"
+    - "ReverseProxy"
+    - "RootCAs"
+    - "RunningBuilds"
+    - "SlaveCommandStatistics"
+    - "SlaveLaunchLogs"
+    - "SlaveLogs"
+    - "AgentsSystemConfiguration"
+    - "MasterSystemConfiguration"
+    - "SystemProperties"
+    - "TaskLogs"
+    - "ThreadDumps"
+    - "UpdateCenter"
+    - "UserCount"
+    - "ComponentImpl"
+    - "SlowRequestComponent"
+    - "SlowRequestThreadDumpsComponent"
+    - "ShutdownComponent"
+    - "StartupComponent"
+    - "HighLoadComponent"
+    - "DeadlockRequestComponent"
+    - "OperationsCenterSupportComponent"
+    - "UserActivityComponent"
+    - "PipelineInternalCalls"
+    - "PipelineTimings"
+    - "PipelineThreadDump"
+    enabled: true
+    period: 1
+globalCredentialsConfiguration:
+  configuration:
+    providerFilter: "none"
+    typeFilter: "none"
+appearance:
+  consoleUrlProvider: {
+    }
+  prism:
+    theme: PRISM
+security:
+  anonymizeSupportBundle:
+    enabled: false
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  apiTokenProperty: {
+    }
+  contentSecurityPolicy:
+    enforce: false
+  cps:
+    hideSandbox: false
+  crumb: {
+    }
+  gitHooks:
+    allowedOnAgents: false
+    allowedOnController: false
+  gitHostKeyVerificationConfiguration:
+    sshHostKeyVerificationStrategy: "knownHostsFileVerificationStrategy"
+  operationsCenterSecurityInfo: {
+    }
+  prism: {
+    }
+  queueItemAuthenticator: {
+    }
+  scriptApproval:
+    forceSandbox: false
+unclassified:
+  administrativeMonitorsConfiguration: {
+    }
+  alerter: {
+    }
+  artifactManager: {
+    }
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  bundleUpdateTiming:
+    automaticReload: false
+    automaticRestart: false
+    rejectWarnings: false
+    reloadAlwaysOnRestart: false
+    skipNewVersions: false
+  casCGlobalConfig: {
+    }
+  cascItemsConfiguration:
+    variableInterpolationEnabledForAdmin: false
+    variableInterpolationEnabledForNonAdmin: false
+  cloudBeesSCMReporting:
+    enabled: true
+  cloudbeesPipelineExplorer:
+    autoPollingEnabled: true
+    autoPollingIntervalSeconds: 10
+    enabled: true
+    pluggableStorageEnabled: false
+    searchMaxIndexSize: 1000
+  cloudbeesPlatform: {
+    }
+  computerRetentionCheckInterval: {
+    }
+  configuration: {
+    }
+  defaultDisplayUrlProvider: {
+    }
+  defaultFolderConfiguration: {
+    }
+  defaultView: {
+    }
+  email-ext:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultTriggerIds:
+    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    mailAccount: {
+      }
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: -1
+    precedenceBulk: false
+    throttlingEnabled: false
+    watchingEnabled: false
+  envVarsFilter: {
+    }
+  experimentalPlugins:
+    enabled: false
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  globalCloudBeesPipelineTemplateCatalog: {
+    }
+  globalConfigurationImpl: {
+    }
+  globalDefaultFlowDurabilityLevel: {
+    }
+  globalLibraries: {
+    }
+  globalUntrustedLibraries: {
+    }
+  headerLabel: {
+    }
+  headerSupportRequestLink: {
+    }
+  junitTestResultStorage:
+    storage: "file"
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  metricsAccessKey: {
+    }
+  myView: {
+    }
+  nodeProperties: {
+    }
+  plugin: {
+    }
+  pollSCM:
+    pollingThreadCount: 10
+  projectNamingStrategy: {
+    }
+  provisioningLimitConfiguration: {
+    }
+  proxyConfigurationManager: {
+    }
+  quietPeriod: {
+    }
+  resourceRoot: {
+    }
+  scmGit:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
+  scmRetryCount: {
+    }
+  shell: {
+    }
+  usageStatistics: {
+    }
+  usageStatisticsCloudBees:
+    disabledJenkinsUsageStatistics: true
+    usageStatisticsCollected: true
+  validationVisualization:
+    quiet: false
+  viewsTabBar: {
+    }
+tool:
+  cloudbeesPluginUsageAnalyzer:
+    enabled: true
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
