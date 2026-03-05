@@ -16,7 +16,6 @@ plugins:
 - id: branch-api
 - id: caffeine-api
 - id: checks-api
-- id: cloudbees-administrative-monitors
 - id: cloudbees-analytics
 - id: cloudbees-assurance
 - id: cloudbees-casc-client
