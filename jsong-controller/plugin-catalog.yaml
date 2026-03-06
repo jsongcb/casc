@@ -1,0 +1,14 @@
+type: "plugin-catalog"
+version: "1" 
+name: "my-plugin-catalog"
+displayName: "My Plugin Catalog"
+configurations:
+  - description: "Extensions to CAP"
+    includePlugins:
+      beer: 
+        version: "104.v3c4e67fa_1b_f5"   
+      my-custom-plugin:
+        url: http://www.example.org/jenkins-plugins/my-custom-plugin-1.2.3.hpi 
+    beekeeperExceptions: 
+      support-core:
+        version: "2.70"
