@@ -1,25 +1,8 @@
-configuration-as-code: {
-  }
-credentials:
-  folder: {
-    }
-  operationsCenter: {
-    }
-  providerImpl: {
-    }
-  system:
-    domainCredentials:
-    - domain: {
-        }
-  user: {
-    }
 jenkins:
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
   disableRememberMe: false
-  log: {
-    }
   markupFormatter: "plainText"
   mode: NORMAL
   noUsageStatistics: true
@@ -50,10 +33,6 @@ jenkins:
   - all:
       name: "all"
   viewsTabBar: "standard"
-cloudbees-monitoring: {
-  }
-advisor: {
-  }
 beekeeper:
   enabled: true
   securityWarnings:
@@ -62,71 +41,6 @@ beekeeper:
   upgrades:
     autoDowngradePlugins: false
     autoUpgradePlugins: true
-globalCloudBeesPipelineTemplateCatalog: {
-  }
-kube:
-  podTemplatesConfiguration: {
-    }
-support:
-  automatedBundleConfiguration:
-    componentIds:
-    - "SegmentClientEventsComponent"
-    - "CloudBeesAssuranceSupport"
-    - "CascScmRetrieverSupport"
-    - "CloudBeesCasCUpdateLogBundlesSupport"
-    - "AgentsConfigFile"
-    - "ConfigFileComponent"
-    - "OtherConfigFilesComponent"
-    - "AboutBrowser"
-    - "AboutJenkins"
-    - "AboutUser"
-    - "AdministrativeMonitors"
-    - "BuildQueue"
-    - "CustomLogs"
-    - "DumpExportTable"
-    - "EnvironmentVariables"
-    - "FileDescriptorLimit"
-    - "GCLogs"
-    - "HeapUsageHistogram"
-    - "ItemsContent"
-    - "AgentsJVMProcessSystemMetricsContents"
-    - "MasterJVMProcessSystemMetricsContents"
-    - "JenkinsLogs"
-    - "LoadStats"
-    - "LoggerManager"
-    - "Metrics"
-    - "NetworkInterfaces"
-    - "NodeExecutors"
-    - "NodeMonitors"
-    - "OtherLogs"
-    - "ProxyConfiguration"
-    - "ReverseProxy"
-    - "RootCAs"
-    - "RunningBuilds"
-    - "SlaveCommandStatistics"
-    - "SlaveLaunchLogs"
-    - "SlaveLogs"
-    - "AgentsSystemConfiguration"
-    - "MasterSystemConfiguration"
-    - "SystemProperties"
-    - "TaskLogs"
-    - "ThreadDumps"
-    - "UpdateCenter"
-    - "UserCount"
-    - "ComponentImpl"
-    - "SlowRequestComponent"
-    - "SlowRequestThreadDumpsComponent"
-    - "ShutdownComponent"
-    - "StartupComponent"
-    - "HighLoadComponent"
-    - "DeadlockRequestComponent"
-    - "OperationsCenterSupportComponent"
-    - "UserActivityComponent"
-    - "PipelineInternalCalls"
-    - "PipelineTimings"
-    - "PipelineThreadDump"
-    enabled: true
-    period: 1
 globalCredentialsConfiguration:
   configuration:
     providerFilter: "none"
@@ -165,12 +79,6 @@ security:
   scriptApproval:
     forceSandbox: false
 unclassified:
-  administrativeMonitorsConfiguration: {
-    }
-  alerter: {
-    }
-  artifactManager: {
-    }
   buildDiscarders:
     configuredBuildDiscarders:
     - "jobBuildDiscarder"
@@ -180,8 +88,6 @@ unclassified:
     rejectWarnings: false
     reloadAlwaysOnRestart: false
     skipNewVersions: false
-  casCGlobalConfig: {
-    }
   cascItemsConfiguration:
     variableInterpolationEnabledForAdmin: false
     variableInterpolationEnabledForNonAdmin: false
@@ -193,18 +99,6 @@ unclassified:
     enabled: true
     pluggableStorageEnabled: false
     searchMaxIndexSize: 1000
-  cloudbeesPlatform: {
-    }
-  computerRetentionCheckInterval: {
-    }
-  configuration: {
-    }
-  defaultDisplayUrlProvider: {
-    }
-  defaultFolderConfiguration: {
-    }
-  defaultView: {
-    }
   email-ext:
     adminRequiredForTemplateTesting: false
     allowUnregisteredEnabled: false
@@ -224,8 +118,6 @@ unclassified:
     precedenceBulk: false
     throttlingEnabled: false
     watchingEnabled: false
-  envVarsFilter: {
-    }
   experimentalPlugins:
     enabled: false
   fingerprints:
@@ -233,67 +125,19 @@ unclassified:
     storage: "file"
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
-  globalCloudBeesPipelineTemplateCatalog: {
-    }
-  globalConfigurationImpl: {
-    }
-  globalDefaultFlowDurabilityLevel: {
-    }
-  globalLibraries: {
-    }
-  globalUntrustedLibraries: {
-    }
-  headerLabel: {
-    }
-  headerSupportRequestLink: {
-    }
   junitTestResultStorage:
     storage: "file"
   mailer:
     charset: "UTF-8"
     useSsl: false
     useTls: false
-  metricsAccessKey: {
-    }
-  myView: {
-    }
-  nodeProperties: {
-    }
-  plugin: {
-    }
   pollSCM:
     pollingThreadCount: 10
-  projectNamingStrategy: {
-    }
-  provisioningLimitConfiguration: {
-    }
-  proxyConfigurationManager: {
-    }
-  quietPeriod: {
-    }
-  resourceRoot: {
-    }
-  scmGit:
-    addGitTagAction: false
-    allowSecondFetch: false
-    createAccountBasedOnEmail: false
-    disableGitToolChooser: false
-    hideCredentials: false
-    showEntireCommitSummaryInChanges: false
-    useExistingAccountWithSameEmail: false
-  scmRetryCount: {
-    }
-  shell: {
-    }
-  usageStatistics: {
-    }
   usageStatisticsCloudBees:
     disabledJenkinsUsageStatistics: true
     usageStatisticsCollected: true
   validationVisualization:
     quiet: false
-  viewsTabBar: {
-    }
 tool:
   cloudbeesPluginUsageAnalyzer:
     enabled: true
