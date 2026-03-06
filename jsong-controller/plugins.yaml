@@ -133,3 +133,5 @@ plugins:
 - id: workflow-scm-step
 - id: workflow-step-api
 - id: workflow-support
+# Not in CAP (see plugin-catalog.yaml)
+- id: "beer"
